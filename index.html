@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Password-Validation</title>
+</head>
+<body>
+    <div class="password-input-box">
+       
+        <input class="password-input" type="password" placeholder="Enter the Password">
+        <i class="fa-solid fa-eye show-password"></i>
+        <button class="button" type="submit">Check</button>
+        <div class="password-checklist">
+            <h3 class="checklist-title">Password should be</h3>
+        
+            <ul class="checklist">
+                <li class="list-item">At least 8 character long</li>
+                <li class="list-item">At least 1 number</li>
+                <li class="list-item">At least 1 lowercase letter</li>
+                <li class="list-item">At least 1 uppercase letter</li>
+                <li class="list-item">At least 1 special character</li>
+            </ul>
+        </div>
+        <p id="demo"></p>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
